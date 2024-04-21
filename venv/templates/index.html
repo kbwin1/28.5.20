@@ -1,0 +1,9 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+<h1>Flask Feedback</h1>
+{% if session['user']  %}
+<h1>Hi {{session['user']}}</h1>
+{% endif %}
+
+{% endblock %}

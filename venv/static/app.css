@@ -1,0 +1,147 @@
+#nav-bar{
+    background-color: darkcyan;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: darkgrey;
+}
+
+.reg-nav{
+    display: flex;
+    position: relative;
+    top: 18px;
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#reg_txt{
+    text-align: center;
+    color: azure;
+    font-family: sans-serif;
+}
+
+.reg_form{
+    border: black solid 2px;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+}
+
+.reg_form input{
+    display: flex;
+}
+
+.reg_form label{
+    color: azure;
+    font-family: sans-serif;
+}
+
+
+.reg_div{
+    display: flex;
+    justify-content: center;
+}
+
+.intro{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.msg{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: azure;
+    margin: 5px 5px;
+}
+
+.msg_bad{
+    font-family: sans-serif;
+    background-color: red;
+    color: azure;
+}
+
+.fed_list{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.fed_list h5 {
+   
+    font-family: sans-serif;
+    color: azure;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.fed_list p{
+   
+    font-family: sans-serif;
+    color: azure;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.fed_item{
+    border: solid black 1px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+form button{
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: azure;
+}
+
+.fed_list button{
+    background-color: red;
+    color: azure;
+}
+
+#del_user button{
+    font-family: sans-serif;
+    background-color: red;
+    color: azure;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+#fed_del{
+    display: flex;
+}
+
+#fed_del button{
+    margin: 5px 5px;
+}
+
+
+#fed_del .edit{
+    font-family: sans-serif;
+    background-color: darkcyan;
+}

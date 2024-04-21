@@ -1,0 +1,46 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+<form id="del_user" action="/delete/user/{{session['user']}}" method="POST">
+    <button>Delete User</button>
+</form>
+
+<h1>Feedbacks</h1>
+
+
+<div class="reg_div" >
+  <form class="reg_form" method="POST">
+
+    {{ form.hidden_tag() }}
+  
+    {% for field in form
+      if field.widget.input_type != 'hidden' %}
+    <p>
+      {{ field.label }}
+      {{ field(class_="form-control") }}
+    </p>
+    {% endfor %}
+  
+    <button>Submit</button>
+  
+  </form>
+</div>
+
+
+<div class="fed_list" >
+   {% for feedback in  feedbacks_list %}
+        <div class="fed_item" >
+          <h5>{{feedback.title}}</h5>
+          <p>{{feedback.content}}</p>
+          <div id="fed_del" >
+            <form action="/delete/{{feedback.id}}" method="POST" >
+                <button>X</button>
+            </form>
+            <form action="/edit/{{feedback.id}}" method="POST" >
+                <button class="edit" >Edit</button>
+            </form>
+          </div> 
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+
+<h1>Feedback Edit</h1>
+
+<div class="reg_div" >
+  <form class="reg_form" method="POST">
+
+    {{ form.hidden_tag() }}
+  
+    {% for field in form
+      if field.widget.input_type != 'hidden' %}
+    <p>
+      {{ field.label }}
+      {{ field(class_="form-control") }}
+    </p>
+    {% endfor %}
+  
+    <button>Submit</button>
+  
+  </form>
+</div>
+
+{% endblock %}
